@@ -33,7 +33,7 @@ def get_questionnaires():
 
 
 # Define your Telegram bot token
-TELEGRAM_BOT_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
+TELEGRAM_BOT_TOKEN = 'TELEGRAM_BOT_TOKEN'
 
 # Define the base URL for Telegram API
 TELEGRAM_API_BASE_URL = f'https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/'
@@ -80,7 +80,7 @@ def main():
 def send_message(text):
     url = TELEGRAM_API_BASE_URL + 'sendMessage'
     data = {
-        'chat_id': 'YOUR_CHAT_ID',  # Replace with the chat ID of the user or group
+        'chat_id': 'CHAT_ID',  # Replace with the chat ID of the user or group
         'text': text
     }
     response = requests.post(url, data=data)
